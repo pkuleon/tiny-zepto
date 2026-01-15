@@ -1,7 +1,8 @@
-# Tiny Zepto
+# 🔥 Tiny Zepto
 
-A lightweight DOM manipulation utility inspired by Zepto.js
- and jQuery. Tiny Zepto provides a simple, chainable API for selecting elements, manipulating the DOM, handling events, and working with attributes, classes, and data. Perfect for small projects where you don’t want the overhead of a full library.
+⚡ Only 1.55 KB raw (no gzip, no minify lies), Zero dependencies, Zero build step, Zero bullshit, No virtual DOM, No JSX, No compiler, No framework religion. This is a lightweight DOM manipulation utility inspired by Zepto.js and jQuery.
+It gives you just the essentials: DOM selection, traversal, class & attribute manipulation, events, and chainable API — nothing more, nothing less. Drop it in, write $q(), and ship.
+Perfect for small projects where you don’t want the overhead of a full library.
 
 ## Features
 
