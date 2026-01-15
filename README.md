@@ -33,17 +33,12 @@ All setter methods return the Tiny Zepto instance for chaining.
 
 Simply include the script in your HTML:
 ```
-<script src="tiny-zepto.js"></script>
-```
-
-Or import as a module:
-```
-import $q from './tiny-zepto.js';
+<script src="https://cdn.jsdelivr.net/gh/pkuleon/tiny-zepto/latest.js"></script>
 ```
 
 ### Usage Examples
 Selecting elements
-```
+```javascript
 // Select by CSS selector
 const items = $q('.item');
 
@@ -54,36 +49,35 @@ const el = $q(document.getElementById('myDiv'));
 const newEl = $q('<div class="new">Hello</div>');
 ```
 Manipulating content
-```
+```javascript
 $q('.item').html('<strong>Updated</strong>');
 console.log($q('.item').text());
 ```
 Handling classes
-```
+```javascript
 $q('#myDiv').addClass('active').removeClass('hidden');
 console.log($q('#myDiv').hasClass('active')); // true
 ```
 Attributes and styles
-```
+```javascript
 $q('img').attr('src', 'image.jpg');
 $q('p').css('color', 'red');
 ```
 Events
-```
+```javascript
 $q('button').on('click', () => alert('Clicked!'));
 $q('button').off('click', handleClick);
 ```
 DOM traversal
-```
+```javascript
 $q('#container').find('.item').addClass('highlight');
 $q('.to-remove').remove();
 ```
 Dataset
-```
+```javascript
 $q('#myDiv').data('id', 123);
 console.log($q('#myDiv').data('id')); // 123
 ```
 
 Tiny Zepto is NOT a full replacement for jQuery or Zepto.js; it focuses on the most common DOM tasks.
-
 Designed for modern browsers (ES6+).
