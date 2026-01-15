@@ -1,3 +1,4 @@
+(function(global){
 const $q = (s) => {
   let res = []
   if (!s) res = []
@@ -24,3 +25,6 @@ const $q = (s) => {
     remove(){return this.forEach(e=>e.remove())}
   }
 }
+if(typeof module!=='undefined') module.exports=$q;
+else global.$q=$q;
+})(typeof window!=='undefined'?window:this);
